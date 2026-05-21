@@ -1,11 +1,4 @@
-{
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
-}
-New vite.config.js is in the zip — open it in Notepad and paste it in.
-That should fix the build error! 💜🧹vite.config.js35 linesjs2:47 PMClaude responded: That's the OLD vite.That's the OLD vite.config.js with base: '/app/' — that's causing the build to fail! You need to replace it with this simpler version. Go to GitHub → click vite.config.js → pencil ✏️ → select all → delete everything → paste this:
-javascriptimport { defineConfig } from 'vite'
+import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
